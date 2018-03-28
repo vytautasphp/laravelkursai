@@ -26,7 +26,7 @@ Route::get('/', function () {
     Mail::send('emails.test', $data, function($message){
 
 
-        $message->to('vytautas.sabutisb@gmail.com', 'Vytautas')->subject('Hello student how are you?');
+        $message->to('vytautas.sabutisb@gmail.com', 'Vytautas')->subject('Hello student how are you???');
 
     });
 
