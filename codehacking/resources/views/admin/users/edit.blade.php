@@ -50,7 +50,17 @@
             </div>
 
             <div class="form-group">
-                {!! Form::submit('Create User', ['class'=>'btn btn-primary']) !!}
+                {!! Form::submit('Update User', ['class'=>'btn btn-primary']) !!}
+            </div>
+
+
+
+
+            {!! Form::model($user,['method'=>'DELETE', 'action'=>['AdminUsersController@destroy', $user->id],'files'=>true]) !!}
+        
+           
+            <div class="form-group">
+                {!! Form::submit('Delete User', ['class'=>'btn btn-danger']) !!}
             </div>
 
         </div>

@@ -27,7 +27,9 @@ Route::get('admin', function(){
 
 });
 
-//Route::resource('admin/users', 'AdminUsersController');
+
+Route::group(['middleware'=>'admin'], function(){
+
 
     Route::resource('admin/users', 'AdminUsersController',['names'=>[
 
@@ -38,6 +40,12 @@ Route::get('admin', function(){
         'edit'=>'admin.users.edit'
 
     ]]);
+
+
+});
+//Route::resource('admin/users', 'AdminUsersController');
+
+    
 
 // <?php
 
