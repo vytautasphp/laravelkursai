@@ -144,11 +144,11 @@
                         <a href="#"><i class="fa fa-wrench fa-fw"></i> Posts<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="">All Posts</a>
+                                <a href="{{url('admin/posts')}}">All Posts</a>
                             </li>
 
                             <li>
-                                <a href="">Create Post</a>
+                                <a href="{{url('admin/posts/create')}}">Create Post</a>
                             </li>
 
                             <li>

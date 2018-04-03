@@ -5,7 +5,7 @@
  */
 
 body {
-    padding-top: 200px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 footer {
@@ -8277,11 +8277,7 @@ button.close {
  * Made by Osman Nuri Okumus
  * Under MIT License
  */
-
-
-
- .arrow {
-
+.arrow {
     float: right;
     line-height: 1.42857;
 }
