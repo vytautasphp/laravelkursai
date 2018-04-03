@@ -47,12 +47,27 @@ Route::group(['middleware'=>'admin'], function(){
         'index'=>'admin.posts.index',
         'create'=>'admin.posts.create',
         'store'=>'admin.posts.store',
-        'edit'=>'admin.posts.edit'
+        'edit'=>'admin.posts.edit',
+
 
     ]]);
 
 
 });
+
+    Route::resource('admin/categories', 'AdminCategoriesController',['names'=>[
+
+
+        'index'=>'admin.posts.index',
+        'create'=>'admin.posts.create',
+        'store'=>'admin.posts.store',
+        'edit'=>'admin.posts.edit',
+
+
+    ]]);
+
+
+
 //Route::resource('admin/users', 'AdminUsersController');
 
     

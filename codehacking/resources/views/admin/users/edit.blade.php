@@ -52,8 +52,7 @@
             <div class="form-group">
                 {!! Form::submit('Update User', ['class'=>'btn btn-primary']) !!}
             </div>
-
-
+            {!! Form::close() !!}
 
 
             {!! Form::model($user,['method'=>'DELETE', 'action'=>['AdminUsersController@destroy', $user->id],'files'=>true]) !!}
@@ -62,7 +61,7 @@
             <div class="form-group">
                 {!! Form::submit('Delete User', ['class'=>'btn btn-danger']) !!}
             </div>
-
+            {!! Form::close() !!}
         </div>
 
     </div>
