@@ -58,10 +58,10 @@ Route::group(['middleware'=>'admin'], function(){
     Route::resource('admin/categories', 'AdminCategoriesController',['names'=>[
 
 
-        'index'=>'admin.posts.index',
-        'create'=>'admin.posts.create',
-        'store'=>'admin.posts.store',
-        'edit'=>'admin.posts.edit',
+        'index'=>'admin.categories.index',
+        'create'=>'admin.categories.create',
+        'store'=>'admin.categories.store',
+        'edit'=>'admin.categories.edit',
 
 
     ]]);
