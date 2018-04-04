@@ -152,7 +152,7 @@
                             </li>
 
                             <li>
-                                <a href="">All Comments</a>
+                                <a href="{{url('admin/comments')}}">All Comments</a>
                             </li>
 
                         </ul>
