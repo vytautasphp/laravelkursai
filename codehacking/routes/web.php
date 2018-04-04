@@ -53,8 +53,6 @@ Route::group(['middleware'=>'admin'], function(){
     ]]);
 
 
-});
-
     Route::resource('admin/categories', 'AdminCategoriesController',['names'=>[
 
 
@@ -66,8 +64,46 @@ Route::group(['middleware'=>'admin'], function(){
 
     ]]);
 
+    Route::resource('admin/media', 'AdminMediasController',['names'=>[
 
 
+        'index'=>'admin.media.index',
+        'create'=>'admin.media.create',
+        'store'=>'admin.media.store',
+        'edit'=>'admin.media.edit',
+
+
+    ]]);
+
+
+
+
+    Route::resource('admin/comments', 'PostCommentsController',['names'=>[
+
+
+        'index'=>'admin.comments.index',
+        'create'=>'admin.comments.create',
+        'store'=>'admin.comments.store',
+        'edit'=>'admin.comments.edit',
+        'show'=>'admin.comments.show'
+
+
+    ]]);
+
+
+    Route::resource('admin/comment/replies', 'CommentRepliesController',['names'=>[
+
+
+
+        'index'=>'admin.replies.index',
+        'create'=>'admin.replies.create',
+        'store'=>'admin.replies.store',
+        'edit'=>'admin.replies.edit'
+
+
+    ]]);
+
+});
 //Route::resource('admin/users', 'AdminUsersController');
 
     
