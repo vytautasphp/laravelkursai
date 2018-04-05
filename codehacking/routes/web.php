@@ -101,10 +101,18 @@ Route::group(['middleware'=>'admin'], function(){
         'index'=>'admin.replies.index',
         'create'=>'admin.replies.create',
         'store'=>'admin.replies.store',
-        'edit'=>'admin.replies.edit'
+        'edit'=>'admin.replies.edit',
+        'show'=>'admin.replies.show'
 
 
     ]]);
+
+});
+
+Route::group(['middleware'=>'auth'], function(){
+
+    Route::post('comment/reply', 'CommentRepliesController@createReply');
+
 
 });
 //Route::resource('admin/users', 'AdminUsersController');
