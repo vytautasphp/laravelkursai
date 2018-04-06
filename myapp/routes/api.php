@@ -14,19 +14,27 @@ use Illuminate\Http\Request;
 |
 */
 
-// Route::get('/user', function (Request $request) {
-
-//     //dd($request);
-//     return $request->user();
-// });
+ 
 
 
 Route::post('register', 'Auth\RegisterController@register');
 
  Route::middleware('auth:api')->group(function(){
 
+
+    Route::get('/user', function (Request $request) {
+
+        //     //dd($request);
+             return $request->user();
+         });
+
+
      Route::get('articles', 'ArticleController@index');
      Route::get('articles/{article}', 'ArticleController@show');
+     
+
+
+
      Route::post('articles', 'ArticleController@store');
      Route::put('articles/{article}', 'ArticleController@update');
      Route::delete('articles/{article}', 'ArticleController@delete');

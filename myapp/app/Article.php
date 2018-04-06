@@ -13,4 +13,10 @@ class Article extends Model
         'body'
         
     ];
+
+public function user(){
+
+    $this->belongsTo('App\User');
+}
+
 }
