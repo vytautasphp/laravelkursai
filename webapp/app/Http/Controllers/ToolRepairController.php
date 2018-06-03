@@ -14,6 +14,11 @@ class ToolRepairController extends Controller
     public function index()
     {
         //
+
+        
+
+        return "veikia";
+
     }
 
     /**
